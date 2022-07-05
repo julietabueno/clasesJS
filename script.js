@@ -251,3 +251,80 @@ const sumar = function (num1,num2){
 console.log(sumar)
  */
 
+
+
+//CLASE 6 - ARRAYS
+/* 
+//Declaracion de arrays
+const valores = []//vacio, para cargar valores mas adelante, por ejemplo carrito de compras
+const cosas = [true, 56, "Hola", false, "Chau"] //datos ingresados por el usuario
+
+console.log(cosas[2]) //Hola, que es ID = n-1
+
+for (let i = 0; i < cosas.length; i++) {
+    console.log(cosas[i])//i = a cosas[0], cosas[1], cosas[2].... cosas [4]
+} */
+//METODOS Y PROPIEDADES
+//LENGTH, me devuelve la cantidad de elementos y sirve, por ejempolo para saber la cantidad de veces que se ejecuta un ciclo FOR
+
+const alumnos = ["Camilo", "Julieta", "Santiago", "Luca"]
+
+//PARA AGREGAR ELEMENTOS
+
+//agrego elementos al final de array
+alumnos.push("Brandon")
+//------------------------------------
+//no se recomienda el unshift
+alumnos.unshift("Francisco")// agrego elementos al principio del array pero modifica los indices de los elementos.
+/* 
+//PARA ELIMINAR ELEMENTOS
+//no se usa porque tambien modifica los indices
+alumnos.shift()
+
+//alumnos.pop()//elimina el ultimo elemento
+
+//normalmente se crea guardando el dato
+let alumnoBrandon = alumnos.pop()
+
+*/
+console.log(alumnoBrandon)
+console.log(alumnos)
+
+/* const tutores = ["Samuel"]
+console.log(tutores.shift())
+console.log(tutores) //me devuelve undefined
+
+ */
+//
+
+/* 
+//splice - para eliminar elementos en cualquier ubicacion
+alumnos.splice(3, 3) //ubicacion, cantidad a eliminar
+
+
+// elimino todos los elementos
+alumnos.splice(0, alumnos.length)
+
+
+//INDEXOF 
+//Sirve para obtener el indice de un elemento, depende lo que ingrese coo parametro
+
+let nombreEliminar = prompt("Ingrese nombre a eliminar")
+
+let indice = alumnos.indexOf(nombreEliminar)
+
+
+if (indice != -1) {
+    alumnos.splice(indice, 1)
+} else {
+    alert("Usuario no encontrado")
+} */
+
+/* 
+//JOIN
+//toma todos los elementos de un array y los transforma a strings, por ejemplo, separados por ,
+
+console.log(alumnos.join(","))
+
+ */
+
