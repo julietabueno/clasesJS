@@ -338,12 +338,41 @@ const alumnosTotales = alumnos.concat(alumnos2)//podria poner varios concat dent
 /* console.log(alumnosTotales)
 
  */
-
+/* 
 //METODO SLICE
 //devuelve una pequeña copia de un  array
 console.log(alumnosTotales.slice (4,9))// desde el id 4, hasta el ID 8 inclusive
 
 
-//METODO INCLUDES //Sirve para busqueda
+//METODO INCLUDES //Sirve para busqueda. Returna True or false. Sirve para condicion de si hago o no una tarea
 console.log(alumnosTotales.includes("Lautaro"))//return False
 console.log(alumnosTotales.includes("Miguel"))//return True
+
+//METODO REVERSE. (Metodo destructivo)
+//Invierte el orden de los elementos
+console.log(alumnosTotales.reverse())
+ */
+
+
+//-------------------------------------------------
+//ARRAY DE OBJETOS
+class Animal {
+    constructor(id, nombre, color, raza,cachorros){
+        this.id = id
+        this.nombre = nombre
+        this.color = color
+        this.raza = raza
+        this.cachorros = cachorros
+    }
+}
+
+const perro1 = new Perro(1, "Cual", "Negro", "Ovejero",["Cualcito", "Pirata", "Firulais","Hector","Tarzan"])
+const perro2 = new Perro(1, "Grinch", "amarillo", "Delmon",["Negrito", "Blue"])
+const perro3 = new Perro(1, "Fatiga", "Marron", "Indefinido",[])
+const perro4 = new Perro(1, "Ayudante de Santa", "Blanco", "Maltes",["Batman","Superman","Robin"])
+
+
+const perros = [perro1, perro2, perro3, perro4]
+
+console.log(perros[2].raza)
+
