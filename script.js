@@ -328,3 +328,22 @@ console.log(alumnos.join(","))
 
  */
 
+//CONCATENAR
+
+const alumnos2 = ["Pablo","Lucas","Tino"]
+
+const alumnosTotales = alumnos.concat(alumnos2)//podria poner varios concat dentro de otros, concat(alumnos2.concat(alumnos3))
+//Por ejempolo en mostrar todo, se usarian las concatenaciones de todos los elementos
+
+/* console.log(alumnosTotales)
+
+ */
+
+//METODO SLICE
+//devuelve una pequeña copia de un  array
+console.log(alumnosTotales.slice (4,9))// desde el id 4, hasta el ID 8 inclusive
+
+
+//METODO INCLUDES //Sirve para busqueda
+console.log(alumnosTotales.includes("Lautaro"))//return False
+console.log(alumnosTotales.includes("Miguel"))//return True
