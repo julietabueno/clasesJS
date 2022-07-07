@@ -330,7 +330,7 @@ console.log(alumnos.join(","))
 
 //CONCATENAR
 
-const alumnos2 = ["Pablo","Lucas","Tino"]
+const alumnos2 = ["Pablo", "Lucas", "Tino"]
 
 const alumnosTotales = alumnos.concat(alumnos2)//podria poner varios concat dentro de otros, concat(alumnos2.concat(alumnos3))
 //Por ejempolo en mostrar todo, se usarian las concatenaciones de todos los elementos
@@ -356,7 +356,7 @@ console.log(alumnosTotales.reverse())
 
 //-------------------------------------------------
 //ARRAY DE OBJETOS
-class Animal {
+/* class Animal {
     constructor(id, nombre, color, raza,cachorros){
         this.id = id
         this.nombre = nombre
@@ -376,3 +376,83 @@ const perros = [perro1, perro2, perro3, perro4]
 
 console.log(perros[2].raza)
 
+ */
+
+
+//------------CLASE 7 - 
+/* 
+
+const impuestoPais = (producto) => producto * 1.30
+const impuestoRetenciones = (producto) => producto * 1.35
+const impuestoIVA = (producto) => producto * 1.21
+const impuestoX = (producto) => producto * 1.10
+
+function calcularImpuestos(producto) {
+    return producto + impuestoPais(producto) + impuestoRetenciones(producto) + impuestoIVA(producto) + impuestoX(producto)
+}
+
+let precioFinal = calcularImpuestos(producto) //calcularImpuestos(100) para probar
+
+console.log(precioFinal)
+
+
+ */
+
+//Ejecutar una funcion en los parametros de otra funcion
+
+class Persona {
+    constructor(nombre, apellido, edad, sueldo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.sueldo = sueldo;
+
+    }
+}
+
+
+//const persona1 = new Persona(prompt("Ingrese un nombre"), prompt("Ingrese un apellido"), parseInt(prompt("Ingrese la edad")), parseFloat(prompt("Ingrese el sueldo")))
+
+
+console.log(persona1)
+
+
+//METODOS DE BUSQUEDA Y TRANSFORMACION
+
+
+const persona1 = new Persona(1, "Pepe", "Perez", 30, 10000)
+const persona2 = new Persona(2, "Maria", "Martinez", 22, 15000)
+const persona3 = new Persona(3, "Pedro", "Parker", 28, 12000)
+const persona4 = new Persona(4, "Fernanda", "Fernandez", 32, 18000)
+const persona5 = new Persona(5, "Carlos", "Carles", 34, 19000)
+
+
+const personas = [persona1, persona2, persona3, persona4, persona5]
+
+
+//-----forEach()
+//const personaArray = (persona) => console.log(persona)
+/* personas.forEach(persona => {
+    persona.sueldo *= 1.30
+    console.log(persona)
+})
+
+ */
+//------find()
+//retorna el primer elemento encontrado, si no encuentra, retorna UNDEFINED
+nombreABuscar = prompt("Ingrese un nombre")
+apellidoABuscar = prompt("Ingrese un apellido")
+/*
+console.log(personas.find(persona => persona.nombre == nombreABuscar && persona.apellido == apellidoABuscar))
+
+ */
+
+//------filter()
+//retorna todos los elementos encontrados, si no encuentra, retorna UNDEFINED
+
+const personasFiltradas = personas.filter(persona => persona.sueldo > 12000)
+
+//console.log(personas.filter(persona => persona.sueldo > 12000))
+personasFiltradas.forEach(persona => {
+    console.log(persona)
+})
