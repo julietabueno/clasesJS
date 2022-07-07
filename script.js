@@ -453,6 +453,60 @@ console.log(personas.find(persona => persona.nombre == nombreABuscar && persona.
 const personasFiltradas = personas.filter(persona => persona.sueldo > 12000)
 
 //console.log(personas.filter(persona => persona.sueldo > 12000))
-personasFiltradas.forEach(persona => {
+/* personasFiltradas.forEach(persona => {
     console.log(persona)
 })
+
+
+//SOME()
+//returna true or false/* 
+let consulta = personas.some(persona => persona.sueldo > 20000)
+
+
+if (consulta) {
+    console.log(personas.filter(personas => personas.sueldo > 15000))
+} else {
+    console.log("No hay personas con sueldo mayor a 15000")
+}
+ */
+
+
+///MAP(
+//Solo en casos de bases muy grandes
+//modifica todos los elementos del array que yo le pida
+
+//const sueldos = personas.map(persona => personas.sueldo)
+/* 
+let acumulador = 0
+
+sueldos.forEach(sueldo => {
+    acumulador += sueldo
+})
+
+console.log(sueldos)
+ */
+//reduce
+//me ahorro lineas de codigo, para sacar un resultado. Reduce un array de numeros a ua sola variable
+//toma el acumulado y realiza la operacion con el actual 
+/* const sueldosAcum = sueldos.slice(0, 3)
+
+let acumulador = sueldosAcum.reduce((prev, act) => prev + act, 0)
+
+//promedio
+console.log(acumulador / sueldos.length)
+ */
+
+//SORT()\
+
+//sirve para ordenar los elementos
+const sueldos = personas.map
+    (persona => persona.sueldo)
+
+console.log(sueldos)
+console.log(sueldos.sort((a, b) => b - a))
+
+
+console.log(sueldos.sort((a, b) => a - b))
+
+
+
