@@ -45,7 +45,7 @@ let carnet = "Codigo: " + codigo + " " +
 
 // ------------------------------------
 // Actividad 4
-/* 
+/*
 let integrante1 = prompt ('INGRESAR 1er INTEGRANTE');
 let integrante2 = prompt ('INGRESAR 1er INTEGRANTE');
 let integrante3 = prompt ('INGRESAR 1er INTEGRANTE');
@@ -68,7 +68,7 @@ let integrante3 = prompt ('INGRESAR 1er INTEGRANTE');
 }
 
  */
-/* 
+/*
 //para hacer de 2 en 2
 for (let i = 1; i <= 50; i = +2) {
     console.log(i);
@@ -81,7 +81,7 @@ for (let i = 1; i <= 50; i = +2) {
 
 //mostrar numeros impares 2 / 2 = 1 resto = 0
 for (let i = 1; i <= 50; i = +2) {
-  
+
     if (i % 2 === 0) {
         continue
     }
@@ -92,7 +92,7 @@ for (let i = 1; i <= 50; i = +2) {
 
 //mostrar numeros pares 3 / 2 = 0 resto = 1
 for (let i = 1; i <= 50; i = +2) {
-  
+
     if (i % 2 !== 0) {
         continue
     }
@@ -137,7 +137,7 @@ while (repetir) {
  */
 
 //---------------calculadora
-/* 
+/*
 let numero1, numero2, operacion
 
 //isNaN(numero) = verdadero si numero es Nan, falso si no
@@ -147,7 +147,7 @@ do {
     numero2 = parseFloat(prompt('Ingrese otro numero'))
     operacion = prompt("Ingrese una operacion (+, -, *, /)")
 }
-while (isNaN(numero1) || isNaN(numero2)) 
+while (isNaN(numero1) || isNaN(numero2))
 
 
 console.log(numero1)
@@ -254,7 +254,7 @@ console.log(sumar)
 
 
 //CLASE 6 - ARRAYS
-/* 
+/*
 //Declaracion de arrays
 const valores = []//vacio, para cargar valores mas adelante, por ejemplo carrito de compras
 const cosas = [true, 56, "Hola", false, "Chau"] //datos ingresados por el usuario
@@ -267,16 +267,16 @@ for (let i = 0; i < cosas.length; i++) {
 //METODOS Y PROPIEDADES
 //LENGTH, me devuelve la cantidad de elementos y sirve, por ejempolo para saber la cantidad de veces que se ejecuta un ciclo FOR
 
-const alumnos = ["Camilo", "Julieta", "Santiago", "Luca"]
+//const alumnos = ["Camilo", "Julieta", "Santiago", "Luca"]
 
 //PARA AGREGAR ELEMENTOS
-
+/*
 //agrego elementos al final de array
 alumnos.push("Brandon")
 //------------------------------------
 //no se recomienda el unshift
 alumnos.unshift("Francisco")// agrego elementos al principio del array pero modifica los indices de los elementos.
-/* 
+
 //PARA ELIMINAR ELEMENTOS
 //no se usa porque tambien modifica los indices
 alumnos.shift()
@@ -286,18 +286,18 @@ alumnos.shift()
 //normalmente se crea guardando el dato
 let alumnoBrandon = alumnos.pop()
 
-*/
+
 console.log(alumnoBrandon)
 console.log(alumnos)
 
-/* const tutores = ["Samuel"]
+ const tutores = ["Samuel"]
 console.log(tutores.shift())
 console.log(tutores) //me devuelve undefined
 
  */
 //
 
-/* 
+/*
 //splice - para eliminar elementos en cualquier ubicacion
 alumnos.splice(3, 3) //ubicacion, cantidad a eliminar
 
@@ -306,7 +306,7 @@ alumnos.splice(3, 3) //ubicacion, cantidad a eliminar
 alumnos.splice(0, alumnos.length)
 
 
-//INDEXOF 
+//INDEXOF
 //Sirve para obtener el indice de un elemento, depende lo que ingrese coo parametro
 
 let nombreEliminar = prompt("Ingrese nombre a eliminar")
@@ -320,7 +320,7 @@ if (indice != -1) {
     alert("Usuario no encontrado")
 } */
 
-/* 
+/*
 //JOIN
 //toma todos los elementos de un array y los transforma a strings, por ejemplo, separados por ,
 
@@ -330,15 +330,15 @@ console.log(alumnos.join(","))
 
 //CONCATENAR
 
-const alumnos2 = ["Pablo", "Lucas", "Tino"]
+//const alumnos2 = ["Pablo", "Lucas", "Tino"]
 
-const alumnosTotales = alumnos.concat(alumnos2)//podria poner varios concat dentro de otros, concat(alumnos2.concat(alumnos3))
+//const alumnosTotales = alumnos.concat(alumnos2)//podria poner varios concat dentro de otros, concat(alumnos2.concat(alumnos3))
 //Por ejempolo en mostrar todo, se usarian las concatenaciones de todos los elementos
 
 /* console.log(alumnosTotales)
 
  */
-/* 
+/*
 //METODO SLICE
 //devuelve una pequeña copia de un  array
 console.log(alumnosTotales.slice (4,9))// desde el id 4, hasta el ID 8 inclusive
@@ -380,7 +380,7 @@ console.log(perros[2].raza)
 
 
 //------------CLASE 7 - 
-/* 
+/*
 
 const impuestoPais = (producto) => producto * 1.30
 const impuestoRetenciones = (producto) => producto * 1.35
@@ -399,7 +399,7 @@ console.log(precioFinal)
  */
 
 //Ejecutar una funcion en los parametros de otra funcion
-
+/*
 class Persona {
     constructor(nombre, apellido, edad, sueldo) {
         this.nombre = nombre;
@@ -409,17 +409,17 @@ class Persona {
 
     }
 }
-
+ */
 
 //const persona1 = new Persona(prompt("Ingrese un nombre"), prompt("Ingrese un apellido"), parseInt(prompt("Ingrese la edad")), parseFloat(prompt("Ingrese el sueldo")))
 
-
+/*
 console.log(persona1)
-
+ */
 
 //METODOS DE BUSQUEDA Y TRANSFORMACION
 
-
+/*
 const persona1 = new Persona(1, "Pepe", "Perez", 30, 10000)
 const persona2 = new Persona(2, "Maria", "Martinez", 22, 15000)
 const persona3 = new Persona(3, "Pedro", "Parker", 28, 12000)
@@ -430,7 +430,7 @@ const persona5 = new Persona(5, "Carlos", "Carles", 34, 19000)
 const personas = [persona1, persona2, persona3, persona4, persona5]
 
 
-//-----forEach()
+ *///-----forEach()
 //const personaArray = (persona) => console.log(persona)
 /* personas.forEach(persona => {
     persona.sueldo *= 1.30
@@ -440,17 +440,17 @@ const personas = [persona1, persona2, persona3, persona4, persona5]
  */
 //------find()
 //retorna el primer elemento encontrado, si no encuentra, retorna UNDEFINED
-nombreABuscar = prompt("Ingrese un nombre")
+/* nombreABuscar = prompt("Ingrese un nombre")
 apellidoABuscar = prompt("Ingrese un apellido")
-/*
+ *//*
 console.log(personas.find(persona => persona.nombre == nombreABuscar && persona.apellido == apellidoABuscar))
 
- */
+*/
 
 //------filter()
 //retorna todos los elementos encontrados, si no encuentra, retorna UNDEFINED
 
-const personasFiltradas = personas.filter(persona => persona.sueldo > 12000)
+//const personasFiltradas = personas.filter(persona => persona.sueldo > 12000)
 
 //console.log(personas.filter(persona => persona.sueldo > 12000))
 /* personasFiltradas.forEach(persona => {
@@ -459,7 +459,7 @@ const personasFiltradas = personas.filter(persona => persona.sueldo > 12000)
 
 
 //SOME()
-//returna true or false/* 
+//returna true or false/*
 let consulta = personas.some(persona => persona.sueldo > 20000)
 
 
@@ -476,7 +476,7 @@ if (consulta) {
 //modifica todos los elementos del array que yo le pida
 
 //const sueldos = personas.map(persona => personas.sueldo)
-/* 
+/*
 let acumulador = 0
 
 sueldos.forEach(sueldo => {
@@ -499,7 +499,7 @@ console.log(acumulador / sueldos.length)
 //SORT()\
 
 //sirve para ordenar los elementos
-const sueldos = personas.map
+/* const sueldos = personas.map
     (persona => persona.sueldo)
 
 console.log(sueldos)
@@ -509,4 +509,77 @@ console.log(sueldos.sort((a, b) => b - a))
 console.log(sueldos.sort((a, b) => a - b))
 
 
+ */
 
+//=========CLASE DOM
+//estructura jerarquica para cada uno de los objetos del navegador. Padres e hijos
+//nodo elemento es estructura jerarquica, nodo plano es texto (p)
+//tipos de nodos: document, element, attr, text, comment
+
+//getElementoByID me devuelve el primer elemento qeu encuentra, como el find .
+//getElementsByClasName("parrafos")[0] me devuelve todos los elementos que cumplen con la clase
+
+//HTMLCollection es un tipo de array. con {} en vez de []. Normalmente se recorre con un for
+
+//childrenNodes devuelve todos los elementos
+//children devuelve los elementos html
+
+//para cambiar el texto de un html, se usa nodo.innerText = "texto que quiero que aparezca"
+//innerHTML = "<p> Hola Coders</p>" reemplaza el parrafo
+//innerHTML += "<p> Hola Coders</p>" agrega un nuevo parrafo
+
+//creo y recorro un array con productos, que van a salir en el html
+
+//--------------------------------------------------------------
+//COPIAR ACA EL CODIGO DEL PROFE DE LA CLASE DE HOY
+//--------------------------------------------------------------
+/*
+productos.forEach(productoArray => {
+    //=+hace que no se pisen los valores, y a parezcan uno debajo del otro
+    divProductos.innerHTML += `
+    <div class="card productos" id="producto${productoArray.id}" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">${productoArray.nombre}</h5>
+                <p class="card-text">Marca: ${productoArray.marca}</p>
+                <p class="card-text">Precio: $${productoArray.precio}</p>
+                <p class="card-text">Stock: ${productoArray.stock}</p>
+        </div>
+        </div>
+     `
+})
+
+
+        <div id ="producto ${productoArray.id}" class = "productos">
+            <p>Nombre: ${productoArray.nombre}</p>
+            <p>Marca: ${productoArray.marca}</p>
+            <p>Precio: ${productoArray.precio}</p>
+            <p>Stock: ${productoArray.stock}</p>
+        </div>
+     */
+
+//====================CLASE 10 ============================================
+
+const botonDarkMode = document.getElementById("botonDarkMode")
+const botonDLightMode = document.getElementById("botonLightMode")
+
+
+let darkMode
+//consulto si el localStorage.getItem("theme"), si ya extiste, consulta el theme elegido, si no existe, lo creo (else)
+if (localStorage.getItem("theme")) {
+    darkMode = localStorage.getItem("theme")
+} else {
+    localStorage.setItem("theme", "light")
+}
+
+if (darkMode == "dark") [
+    document.body.classList.add("darkMode")
+]
+botonDarkMode.addEventListener("click", () => {
+    document.body.classList.add("darkMode") //añado clase al modo
+    localStorage.setItem('theme', "dark")
+})
+
+botonLightMode.addEventListener("click", () => {
+    document.body.classList.delete("darkMode")   //quito la clase
+    localStorage.setItem('theme', "light")
+})
